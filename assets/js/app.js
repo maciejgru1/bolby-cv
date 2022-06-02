@@ -14,12 +14,20 @@ hamburgerElement.addEventListener(
     }
 )
 
-//  animation
+let themeSwitcher = document.querySelector('.theme-switcher');
 
+themeSwitcher.addEventListener(
+    'click', () => {
+        document.body.classList.toggle('light')
+        document.body.classList.toggle('dark')
+    }
+)
+
+//  animation
 AOS.init();
 
 var options = {
-    strings: ['I am senior full stack NINJA developer'],
+    strings: ["I'm junior full-stack developer"],
     typeSpeed: 50,
     startDelay: 1000,
     showCursor: false,
